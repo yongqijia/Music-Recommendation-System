@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Recommendation System</title>
+<link rel="stylesheet" type="text/css" href="recstyle.css">
+</head>
+<body>
+	<div class="title">Music . Life</div>
+	<input class='signout' type='button' value='sign out' onclick='signout()'>
+	<div class="header">Find Your Music</div>
+	<div class='searchByArtisi'>
+		Find Your Favorite Artist: 
+		<select id='1'>
+			<option value=""></option>
+			<option value="maroon5">Maroon 5</option>
+			<option value="coldplay">Coldplay</option>
+			<option value="brunomars">Bruno Mars</option>
+			<option value="beyonce">Beyonce</option>
+			<option value="kanyewest">Kanye West</option>
+			<option value="martingarrix">Martin Garrix</option>
+			<option value="tiesto">Tiësto</option>
+			<option value="hardwell">HardWell</option>
+			<option value="Dimitri Vegas & Like Mike">Dimitri Vegas &amp; Like Mike</option>
+			<option value="2pac">2 Pac</option>
+			<option value="mcjin">MC Jin</option>
+		</select>
+	</div>
+	<div class='searchByGenre'>
+		Find Your Favorite Genre:  
+		<select>
+			<option value=""></option>
+			<option value="pop rock">pop rock</option>
+			<option value="alternative rock">alternative rock</option>
+			<option value="Funk">Funk</option>
+			<option value="R&B">R&amp;B</option>
+			<option value="Booige">Booige</option>
+			<option value="pop">pop</option>
+			<option value="hip hop">HipHop</option>
+			<option value="rap">Rap</option>
+			<option value="house">house</option>
+			<option value="dance">dance</option>
+			<option value="electronic">electronic</option>
+			<option value="big room house">big room house</option>
+			<option value="future house">future house</option>
+		</select>
+	</div>
+	<input type='button' value='Search' onclick='search()'><br><br>
+	<div id='output'></div>
+	<br><br>
+
+	<div class="row">
+		<div class="column">
+			<img src="images/acdc.jpg" style="width: 100%"> <img
+				src="images/Coldplay.jpg" style="width: 100%"> <img
+				src="images/marshmello.jpg" style="width: 100%"> <img
+				src="images/martin garrix.jpg" style="width: 100%"> <img
+				src="images/Top100Djs.png" style="width: 100%"> <img
+				src="images/maroon5.jpg" style="width: 100%"> <img
+				src="images/flamenco.jpg" style="width: 100%">
+		</div>
+		<div class="column">
+			<img src="images/aw.jpg" style="width: 100%"> <img
+				src="images/2pac.jpg" style="width: 100%"> <img
+				src="images/eminem.jpg" style="width: 100%"> <img
+				src="images/jayz.jpg" style="width: 100%"> <img
+				src="images/havana.jpg" style="width: 100%"> <img
+				src="images/dimitri.jpg" style="width: 100%">
+		</div>
+		<div class="column">
+			<img src="images/dimitri.jpg" style="width: 100%"> <img
+				src="images/snoopdogs.jpg" style="width: 100%"> <img
+				src="images/travis.jpg" style="width: 100%"> <img
+				src="images/Coldplay.jpg" style="width: 100%"> <img
+				src="images/brunomars.jpg" style="width: 100%"> <img
+				src="images/eminem.jpg" style="width: 100%">
+		</div>
+		<div class="column">
+			<img src="images/maroon5.jpg" style="width: 100%"> <img
+				src="images/asap.jpg" style="width: 100%"> <img
+				src="images/2pac.jpg" style="width: 100%"> <img
+				src="images/kanyewest.jpg" style="width: 100%"> <img
+				src="images/wiz.jpg" style="width: 100%"> <img
+				src="images/acdc.jpg" style="width: 100%">
+		</div>
+	</div><br>
+	<div class='credit'>Developer --- Linjie Liu &amp; Yongqi Jia</div>
+	
+	<script>
+		function signout(){
+			alert('You have successfully signed out!');
+			location.href = "main_page.html";				
+		}
+		
+		function search(){	
+			document.getElementById("output").innerHTML = '';
+			var artistArray = document.getElementById('1');
+			var artist = artistArray.options[artistArray.selectedIndex].text;
+			var genreArray = document.querySelectorAll("option");
+			for(var i = 0; i < genreArray.length; i++){
+				if(genreArray[i].selected){
+					var genre = genreArray[i].value;
+				}
+			}
+			var ajax = new XMLHttpRequest();
+			ajax.open("GET", "musicdbController.php?u=no&p=no&a=" + artist + "&g=" + genre + "&command=search", true);
+			ajax.send();
+			ajax.onreadystatechange = function() {
+			if (ajax.readyState == 4 && ajax.status == 200) {
+				document.getElementById("output").innerHTML = ajax.responseText;					
+			}
+			}
+		}	
+	</script>
+</body>
+</html>

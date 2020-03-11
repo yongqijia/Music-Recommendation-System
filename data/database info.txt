@@ -1,0 +1,13 @@
+table artist
+id	   name		 		gender	   music style										girlfriend&boyfriend
+100001     Maroon 5      		n/a	   pop rock										n/a
+100002	   Coldplay	 		n/a	   alternative rock/pop rock/post-Britpop/pop						n/a
+100003     Bruno Mars    		m	   pop/rock/reggae/R&B/soul/hip hop							Jessica Marie Caban	
+100004	   Beyonce	 		f	   R&B/pop/funk										Jay-Z
+100005	   Kanye West	 		m	   Hip hop										Kim Kardashian
+100006	   Martin Garrix 		m	   Progressive house/big room house/Dutch house electro house/future bass		Lynn Spoor
+100007	   Tiësto			m	   Progressive house/future house/electro house/big room house/trance/deep house	Monique Spronk
+100008     HardWell			m	   Progressive house/big room house/electro houseDutch house/trap/tech house		Yanicke Agnes
+100009     Dimitri Vegas & Like Mike    n/a	   progressive house/big room house/Electro house/future bass				n/a
+100010     2 Pac			m          Hip Hop										Kidada Jones
+100011     MC Jin			m	   Hip Hop										Carol Chen

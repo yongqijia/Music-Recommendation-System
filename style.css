@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.scrolling-box {
+	background-image: url("images/backgroundImage.jpg");
+	background-size: cover;
+	overflow-y: scroll;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.title{
+	padding-left: 100px;
+	font-size: 60px;
+	font-family: Bradley Hand, cursive;
+}
+
+.login{
+	padding-left: 100px;
+	font-size: 50px;
+	font-family: Bradley Hand, cursive;
+	margin-top: -2em;
+}
+
+#username, #password{
+	border: none;
+    border-bottom: 2px solid black;
+    color: white;
+    background: transparent;
+}
+
+#join {
+	float: right;
+	margin-top: 10px;
+	color: white;
+	background-color: black;
+	margin-right: 5px;
+}
+
+.credit{
+	margin-bottom: 10px;
+	margin-left: 15px;
+	font-size: 17px;
+	font-family: Bradley Hand, cursive;
+}
+
+#playbutton{
+	position: absolute;
+    top: 15px;
+    right: 30px;
+}

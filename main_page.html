@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Music Recommendation System</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="scrolling-box">
+		<section id="1">
+			<div class="title">Music . Life</div>
+			<img id="playbutton" alt="play_button" src="images/button.png"
+				height="30" width="30" onclick="play()">
+			<audio id="audio" src="music/there for you.mp3"></audio>
+		</section>
+		<section id="2">
+			<div class="login">
+				<br>
+				<fieldset>
+					<legend>Start a New Life</legend>
+					Username: <input id="username" type="text" name="userName" value=""><br>
+					Password: <input id="password" type="text" name="password" value=""><br>
+					<input id="join" type="button" value="Log in" onclick="login()">
+					<input id="join" type="button" value="Sign up" onclick="join()">
+				</fieldset>
+			</div>
+		</section>
+		<div class="credit">Developer --- Yongqi Jia &amp; Linjie Liu</div>
+	</div>
+
+	<script>
+		function login() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			var ajax = new XMLHttpRequest();
+			var url = "musicdbController.php?u=" + username + "&p=" + password + "&command=login&a=no&g=no";
+			ajax.open("GET", url, true);
+			ajax.send();
+			ajax.onreadystatechange = function() {
+				if (ajax.readyState == 4 && ajax.status == 200) {
+					if (ajax.responseText == 'correct') {
+						alert('Welcome ' + username + '!');
+						location.href = "recommand_page.html";
+					} else if (ajax.responseText == 'acorrect') {
+						alert("Username or Password is invalid. Please check and enter again.");
+					} else {
+						alert("User not existed! Please sign up.");
+					}
+				}
+			}
+		}
+		
+		function join() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			var ajax = new XMLHttpRequest();
+			var url = "musicdbController.php?u=" + username + "&p=" + password + "&command=signup&a=no&g=no";
+			ajax.open("GET", url, true);
+			ajax.send();
+			ajax.onreadystatechange = function() {
+				if (ajax.readyState == 4 && ajax.status == 200) {
+					if(ajax.responseText == 'correct'){
+						alert('Welcome ' + username + '!');
+						location.href = "recommand_page.html";
+					}else if(ajax.responseText == 'incorrect'){
+						alert('User account is already existed!');
+					}		
+				}
+			}
+		}
+
+		function play() {
+			var audio = document.getElementById("audio");
+			audio.play();
+		}
+	</script>
+
+</body>
+</html>

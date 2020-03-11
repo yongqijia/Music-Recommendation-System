@@ -1,0 +1,66 @@
+id		artists_id	song 	 				genre	 				mv_link
+1218001		100001		Maps					pop rock				https://www.youtube.com/watch?v=NmugSMBh_iI
+1218002		100001		Don't Wanna Know			pop rock				https://www.youtube.com/watch?v=ANS9sSJA9Yc
+1218003		100001		Animals					pop rock				https://www.youtube.com/watch?v=qpgTC9MDx1o
+1218004		100001		One More Night				pop rock				https://www.youtube.com/watch?v=fwK7ggA3-bU
+1218005		100001		Girls Like You				pop rock				https://www.youtube.com/watch?v=aJOTlE1K90k
+1218006		100002		Something Just Like This		pop rock				https://www.youtube.com/watch?v=FM7MFYoylVs
+1218007		100002		Hymn For The Weekend			alternative rock			https://www.youtube.com/watch?v=YykjpeuMNEk
+1218008		100002		Adventure Of A Lifetime			pop rock				https://www.youtube.com/watch?v=QtXby3twMmI
+1218009		100002		Viva La Vida				alternative rock			https://www.youtube.com/watch?v=dvgZkm1xWPE
+1218010		100002		Cemeteries Of London			alternative rock			https://www.youtube.com/watch?v=H6kfJJRLYc0
+1218011		100003		24K Magic				Funk/R&B				https://www.youtube.com/watch?v=UqyT8IEBkvY
+1218012		100003		Uptown Funk				Funk/R&B/Booige				https://www.youtube.com/watch?v=OPf0YbXqDm0
+1218013		100003		Runaway Baby				pop					https://www.youtube.com/watch?v=mIBjdKn97T4
+1218014		100003		Just the Way You Are			pop					https://www.youtube.com/watch?v=LjhCEhWiKXk
+1218015		100003		That's What I Like			R&B/hip hop/soul			https://www.youtube.com/watch?v=PMivT7MJ41M
+1218016		100004		Halo					R&B/pop					https://www.youtube.com/watch?v=bnVUHWCynig
+1218017		100004		If I Were A Boy				R&B/pop					https://www.youtube.com/watch?v=AWpsOqh8q0M
+1218018		100004		Crazy in Love				R&B/pop					https://www.youtube.com/watch?v=ViwtNLUqkMY
+1218019		100004		Partition				R&B					https://www.youtube.com/watch?v=pZ12_E5R3qc
+1218020		100004		Heaven					R&B					https://www.youtube.com/watch?v=QyOok1myLjw
+1218021		100005		No Church In The Wild			hip hop/rap				https://www.youtube.com/watch?v=FJt7gNi3Nr4
+1218022		100005		Niggas In Paris				hip hop/rap				https://www.youtube.com/watch?v=gG_dA32oH44
+1218023		100005		I Love it				hip hop/rap				https://www.youtube.com/watch?v=cwQgjq0mCdE
+1218024		100005		Gold Digger				hip hop					https://www.youtube.com/watch?v=6vwNcNOTVzY
+1218025		100005		Monster					hip hop					https://www.youtube.com/watch?v=Idz9aYXq98U
+1218026		100006		Proxy					house					https://www.youtube.com/watch?v=JbyX8NE1Was
+1218027		100006		Forever					dance/electronic			https://www.youtube.com/watch?v=ScNsBpQ8KIg
+1218028		100006		Animals					big room house/dance/electronic		https://www.youtube.com/watch?v=gCYcHz2k5x0
+1218029		100006		Waiting For Love			dance/electronic			https://www.youtube.com/watch?v=cHHLHGNpCSA
+1218030		100006		Byte					future house/dance/electronic		https://www.youtube.com/watch?v=zH9sXggRlxc
+1218031		100007		Boom					dance/electronic			https://www.youtube.com/watch?v=tSJSVmfaMCs	
+1218032		100007		Red Lights				dance/electronic			https://www.youtube.com/watch?v=CFF0mV24WCY
+1218033		100007		Secrets					dance/electronic			https://www.youtube.com/watch?v=Dr1nN__-2Po
+1218034		100007		Split					house/dance/electronic			https://www.youtube.com/watch?v=klIF0nhsxxM
+1218035		100007		The Only Way Is up			dance/electronic			https://www.youtube.com/watch?v=AewNd29wRUM
+1218036		100008		Live the Night				dance/electronic			https://www.youtube.com/watch?v=VUsApjOEchI
+1218037		100008		Power					dance/electronic			https://www.youtube.com/watch?v=J701ucIsrrk
+1218038		100008		Don't Stop the Madness			house					https://www.youtube.com/watch?v=hH7FYaMnGb8
+1218039		100008		Young Again				house/dance/electronic			https://www.youtube.com/watch?v=AQ0resnXCcE
+1218040		100008		Bella Ciao				dance/electronic			https://www.youtube.com/watch?v=rGHwJ0RSBIY
+1218041		100009		The Hum					dance/electronic			https://www.youtube.com/watch?v=exJlapzPnlc
+1218042		100009		Tremor					big room house				https://www.youtube.com/watch?v=9vMh9f41pqE
+1218043		100009		Crowd Control				dance/electronic			https://www.youtube.com/watch?v=21a1bTVwjdo
+1218044		100009		Lounder					dance/electronic			https://www.youtube.com/watch?v=nppfBvTLy5M
+1218045		100009		We Are Legend				dance/electronic			https://www.youtube.com/watch?v=-z2EqJTyAiU
+1218046		100010		How Do U Want It/California Love	hip hop/rap				https://www.youtube.com/watch?v=w9KWYwczHEw
+1218047		100010		Dear Mama/Old School			hip hop/rap				https://www.youtube.com/watch?v=Mb1ZvUDvLDY
+1218048		100010		Keep Ya Head Up				hip hop/rap				https://www.youtube.com/watch?v=XW--IGAfeas
+1218049		100010		Thugz Mansion				hip hop/rap				https://www.youtube.com/watch?v=7Cz_nOpxgCU
+1218050		100010		I Get Around				hip hop/rap				https://www.youtube.com/watch?v=YqJAnQTwmJs
+1218051		100011		Learn Chinese				hip hop/rap				https://www.youtube.com/watch?v=YMOZRk74QrY
+1218052		100011		Complicated				hip hop/rap				https://www.youtube.com/watch?v=HT31JHm5XLY
+1218053		100011		Eat, Sleep, and Die			hip hop/rap				https://www.youtube.com/watch?v=H3qRrNZxtkc
+1218054		100011		HK Superstar				pop					https://www.youtube.com/watch?v=q_MHQRmhl1g
+1218055		100011		HipHopMan				hip hop/rap				https://www.youtube.com/watch?v=ICuSMHCaSj8
+
+
+
+
+
+
+
+
+
+
